@@ -2,11 +2,6 @@
 import os
 import csv
 import argparse
-
-'''
-TO DO
-- loggery
-- mozliwosc zainstalowania jako pakiet za pomoca pip'a
 '''
 
 
@@ -46,7 +41,7 @@ def parser():
 
 # creates a dictionary which keys are all available terms for classes, and values are default (0)
 def init_dict():
-    days = ['poniedzia³ek ', 'wtorek ', 'œroda ', 'czwartek ', 'pi¹tek ']
+    days = ['poniedziaÂ³ek ', 'wtorek ', 'Å“roda ', 'czwartek ', 'piÂ¹tek ']
     letters = ['A ', 'B ']
     hours = ['8:00 - 9:30', '9:35 - 11:05', '11:15 - 12:45', '12:50 - 14:20', '14:40 - 16:10', '16:15 - 17:45', '17:50 - 19:20', '19:30 - 21:00']
     terms = []
@@ -155,24 +150,24 @@ for term in terms:
         print(term, terms[term])
 
 '''
-wtorek 16:15 A ->   poniedzia³ek 17:50 (1), 19:30 (0)
+wtorek 16:15 A ->   poniedziaÂ³ek 17:50 (1), 19:30 (0)
                     wtorek 14:40 (3), 16:15 (1), 17:50 (3), 19:30 (0)
-                    œroda 11:15 (3), 17:50 (0), 19:20 (0)
+                    Å“roda 11:15 (3), 17:50 (0), 19:20 (0)
                     czwartek 14:40 (0), 16:15 (2), 19:30 (0)
-                    pi¹tek 8:00 (3), 9:35 (3), 12:50 (2), 14:40 (3), 16:15 (2)
-wtorek 17:50 A ->   poniedzia³ek 11:15 (2), 17:50 (3), 19:30 (0)
+                    piÂ¹tek 8:00 (3), 9:35 (3), 12:50 (2), 14:40 (3), 16:15 (2)
+wtorek 17:50 A ->   poniedziaÂ³ek 11:15 (2), 17:50 (3), 19:30 (0)
                     wtorek 17:50 (0), 19:30 (0)
-                    œroda 11:15 (1), 17:50 (2), 19:20 (0)
+                    Å“roda 11:15 (1), 17:50 (2), 19:20 (0)
                     czwartek 11:15 (3), 16:15 (2), 19:30 (0)
-                    pi¹tek 8:00 (1), 9:35 (3), 12:50 (3), 14:40 (1), 16:15 (2)
-œroda 8:00 A ->     poniedzia³ek 11:15 (3), 17:50 (2), 19:30 (0)
+                    piÂ¹tek 8:00 (1), 9:35 (3), 12:50 (3), 14:40 (1), 16:15 (2)
+Å“roda 8:00 A ->     poniedziaÂ³ek 11:15 (3), 17:50 (2), 19:30 (0)
                     wtorek 14:40 (3), 17:50 (2), 19:30 (0)
-                    œroda 8:00 (3), 11:15 (1), 17:50 (0), 19:30 (0)
+                    Å“roda 8:00 (3), 11:15 (1), 17:50 (0), 19:30 (0)
                     czwartek 11:15 (3), 12:50 (3), 14:40 (2), 16:15 (2), 19:30 (0)
-                    pi¹tek 8:00 (3), 12:50 (3), 14:40 (1), 16:15 (1)
-œroda 17:50 A ->    poniedzia³ek 19:30 (0)
+                    piÂ¹tek 8:00 (3), 12:50 (3), 14:40 (1), 16:15 (1)
+Å“roda 17:50 A ->    poniedziaÂ³ek 19:30 (0)
                     wtorek 16:15 (2), 17:50 (1), 19:30 (0)
-                    œroda 17:50 (0), 19:30 (0)
+                    Å“roda 17:50 (0), 19:30 (0)
                     czwartek 12:50 (2), 14:40 (3), 16:15 (1), 19:30 (0)
-                    pi¹tek 8:00 (3), 14:40 (2)
+                    piÂ¹tek 8:00 (3), 14:40 (2)
 '''
