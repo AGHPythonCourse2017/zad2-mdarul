@@ -2,7 +2,7 @@
 import os
 import csv
 import argparse
-'''
+
 
 
 class ParserCollisionsExceptions(Exception):
