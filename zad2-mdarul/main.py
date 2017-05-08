@@ -4,7 +4,6 @@ import csv
 import argparse
 
 
-
 class ParserCollisionsExceptions(Exception):
     """Cant be lower than 0"""
     pass
