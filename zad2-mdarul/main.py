@@ -82,7 +82,8 @@ def get_files(path):
     return l
 
 
-# analises all files - everytime it finds a student that is given group (album_numbers list), it increments the dictionary's value (the key is the group in which he/she has been found)
+# analises all files - everytime it finds a student that is given group (album_numbers list), 
+# it increments the dictionary's value (the key is the group in which he/she has been found)
 def fill_terms(terms, album_numbers, path):
     file_list = get_files(path)
     for file in file_list:
