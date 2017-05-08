@@ -124,7 +124,8 @@ def get_students(path, group, subject):
     group_ids = []
     with open(path + subject, newline='') as csv_file:
         file_content = csv.reader(csv_file, delimiter=";")
-        # if we find our group, we set flag True. Once we finish analising it (line is empty, all people from group were added), we break the operation
+        # if we find our group, we set flag True. Once we finish 
+        # analising it (line is empty, all people from group were added), we break the operation
         flag = False
         for line in file_content:
             if flag and not line:
